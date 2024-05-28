@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    
+}
+.card-container{
+    width:100%;
+    height:100%;
+    background-image: url(https://img.freepik.com/free-photo/high-angle-beautiful-buildings-nighttime_23-2149444909.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px 100px 0;
+    display: flex;
+}
+.card-container .card-1{
+    width: 350px;
+    height: auto;  
+    padding: 25px;
+    background-color: rgba(34, 219, 219, 0.555);
+    color:  rgba(15, 16, 16, 0.941);
+    margin:auto ;
+}
+.card-1:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 10px 2px #c9c6c6;
+    backdrop-filter: blur(3px);
+}
+.card-container .profile-pic{
+    width: 150px;
+    height: 150px;
+    border-radius: 50% ;
+    margin: auto;
+    background-image: url(https://static.toiimg.com/photo/107885952/107885952.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card-container .card-content{
+    font-size: 20px;
+    text-align: justify;
+    
+}
+.card-1 .name{
+    margin: 15px 0;
+    text-align: center;
+    font-size: 20px;
+
+}
+.card-1 .links{
+    margin: 30px 0 10px;
+    text-align: center;
+}
+.card-1 a{
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    background-color:rgb(3, 148, 221);
+    color: rgb(11, 11, 11);
+} 
+
+

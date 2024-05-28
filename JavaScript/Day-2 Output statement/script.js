@@ -1,0 +1,10 @@
+// document.write("Hello world");
+const output=alert("Do you want to your location?");
+console.log(output);
+const resu=confirm("Do you want to your location?");
+console.log(resu);
+console.warn("its rain outside");
+var userName=+prompt("ENter your name");
+console.log(userName);
+const age=+prompt("ENter your age");
+console.log(age);

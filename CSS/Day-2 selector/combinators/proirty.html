@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priority</title>
+     <style>
+    /*
+    tagname selector 
+    important has top most priority>id>class>tagname>universal
+    */
+     div{
+        color:darkblue !important;
+     }
+     /*
+     id selector
+     */
+     #div-1{
+        color: deeppink;
+     }
+     #div-2{
+        color: deepskyblue;
+     }
+      /*
+     class selector
+     */
+     .d1{
+        color:darkgreen
+     }
+     .d2{
+        color: darkkhaki;
+     }
+      /*
+     universal selector
+     */
+     *{
+        color:skyblue;
+     }
+
+
+     </style>
+</head>
+<body>
+     <div id="div-1" class="d1">
+        div-1
+     </div>
+     <div id="div-2" class="d2">
+        div-2
+     </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+div{
+    width: 70%;
+    height: 70%;
+    background-color: rgb(28, 234, 234);
+    /* text-align:center; */
+    font-size: 20px;
+}
+div>h2{
+    /* background-color: deeppink; */
+    text-align: center;
+    word-spacing: 60px;
+    /* text-transform: uppercase; */
+   text-transform: lowercase;
+}
+div>h2:hover{
+    /* text-decoration: underline; */
+    text-decoration: line-through;
+    cursor: pointer;
+    text-underline-position: auto;
+}
+div>p{
+    padding: 2px;
+    line-height: 40px;
+    text-align: justify;
+}
+div>article{
+    text-align: end;
+}
+div>article>a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 15px;
+    
+
+}
+diV>article>a:hover{
+    color: red;
+    text-decoration: 5px dashed underline green;
+    text-underline-offset: 20px;
+    
+}

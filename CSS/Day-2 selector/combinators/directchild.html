@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>direct child selector</title>
+    <style>
+        article>p{
+            color: red;
+        }
+        article>main>p{
+            color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <p>Direct child-1</p>
+        <p>Direct child-2</p>
+        <main>
+            <p>Indirect child</p>
+        </main>
+    </article>
+</body>
+</html>

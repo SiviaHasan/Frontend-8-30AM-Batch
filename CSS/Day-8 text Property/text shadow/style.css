@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: orange;
+    font-size: 85px;
+    display: grid;
+    place-items: center;
+}
+h2{
+    /* text-shadow: 350px 0 5px rgb(56, 158, 23),
+                -350px 0 5px white;
+    text-shadow:0 150px 5px rgb(56, 158, 23),
+                0 -150px 5px white; */
+    text-shadow:150px -150px 5px rgb(56, 158, 23),
+                 -150px 150px 5px white;
+              
+}

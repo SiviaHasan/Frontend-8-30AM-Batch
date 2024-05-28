@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+     sup{
+        color: red;
+     }
+    </style>
+</head>
+<body>
+    <form action="#">
+        Gender: 
+       <input type="radio" name="gender" checked>  Male 
+       <input type="radio" name="gender" > Female 
+       <input type="radio" name="gender" > Others <br><br>
+       <input type="checkbox" > Singing Song
+         <input type="checkbox"  checked>Listoning Music<br>
+     <input type="checkbox" checked> Drinking Water  
+     <input type="checkbox">Watching Movies & Web Series <br>
+     <input type="checkbox" checked> Travelling
+     <input type="checkbox" > Reading Books   <br><br>
+     <input type="image" src="./HD-wallpaper-sidhu-moose-wala-live-black-jacket-rapper-singer.jpg"  height="50px" width="50px" value="img">
+
+     <!-- name attribute -->
+     <!-- Required  -->
+     <!-- autofocus -->
+     <br><br>
+     <!-- Placeholder -->
+     Email <sup>*</sup> <input type="email" name="Email" required autofocus placeholder="abc@gmail.com" value="new@gmail.com" autocomplete="off">
+     <br><br>
+     <!-- size -->
+     <!-- maxlength minlength -->
+     name <input type="text" size="15px" maxlength="16" minlength="2">
+     <br><br>
+     Password <sup>*</sup><input type="password" name="password" required > <br> <br>
+     <!-- read Only -->
+     Company name<input type="text" name="Company Name" value="xyz Pvt. Ltd" readonly ><br><br>
+     
+     <!-- Disabled -->
+     Location<input type="text" name="location" value="Noida" disabled>
+
+     
+     <br><br>
+     <input type="submit" value="Login">
+     <input type="submit" value="Cancel">
+
+    </form>
+</body>
+</html>

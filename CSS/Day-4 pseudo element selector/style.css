@@ -1,0 +1,57 @@
+/* div::first-letter{
+    color:skyblue;
+    font-size: 70px;
+    font-style: italic;
+}
+p::first-line{
+    color:coral;
+    font-size: large;
+
+} */
+/* ol,ul{
+    list-style: none;
+} */
+
+/* to change the default selection blue
+ p::selection{
+    background: green;
+    color: whitesmoke;
+}
+
+to change for all elements
+::selection{
+    background: green;
+    color: whitesmoke;
+} */
+
+
+/* ul>li::marker{
+    content: "😍";
+}
+ol li::marker{
+    content: "❤️";
+} */
+
+/* body{
+    background-color: black;
+}
+div{
+    color:white;
+}
+div::before{
+    content: "Hello";
+    color: coral;
+}
+div::after{
+     content:"💐";
+} */
+
+ul :nth-child(odd)::marker{
+    content:"😍"
+}
+ul>:nth-child(even)::marker{
+    content: "❤️";
+}
+ul>:nth-child(10)::marker{
+    content: '🤮';
+}

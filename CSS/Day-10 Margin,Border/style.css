@@ -1,0 +1,33 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+div{
+    margin:100px auto 0px;
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+    place-content: center;
+    border: 12px solid coral;
+    border-radius: 50%;
+    overflow: scroll;
+}
+span{
+    margin:120px auto;
+    padding: 10px;
+    /* border-top-left-radius: 40px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 40px; */
+    border-radius: 20px 10px        0px;
+    /*         top-left top-right   bottom right
+                        bottom left
+                   */
+    font-size: 70px;
+    place-content: center;
+    border-top: 12px solid rgb(31, 184, 0);
+    border-right: 12px groove rgb(173, 209, 42);
+    border-bottom: 12px ridge rgb(55, 154, 215);
+    border-left: 12px solid rgb(31, 184, 0);
+}

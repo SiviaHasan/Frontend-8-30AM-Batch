@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+    <style>
+        article>div>main>p{
+            color:green
+        }
+        article>div>span>p{
+            color:deeppink
+        }
+        article>div>span{
+            color:saddlebrown
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <p>Direct child-1</p>
+        <div>
+            <main>
+                <p>Indirect child-1</p>
+            </main>
+            <span>
+                <p>Indirect child-2</p>
+            </span>
+        </div>
+        <div>
+            <span>
+                Indirect child-3
+            </span>
+        </div>
+    </article>
+</body>
+</html>

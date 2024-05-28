@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown list</title>
+    <style>
+        fieldset{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>User Form</legend>
+            <label for="user-name">Name
+                <input type="text" name="user_name" id="user-name">
+            </label>
+            <label for="YOP">Select YOP <br>
+                <select name="user-Year of Passout"   id="YOP">
+                    <option value=""  disabled selected>--select yop--</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                </select>
+            </label><br><br>
+            <label for="food">Order The Food <br>
+                <select name="food-details" id="food">
+                    <optgroup>
+                        <option value="" selected disabled>Veg Options</option>
+                        <option value="Aloo Partha">Aloo Partha</option>
+                        <option value="Kadi-chawal">Kadi-chawal</option>
+                        <option value="Rajmah-chawal">Rajmah-chawal</option>
+                        <option value="Dal-makhni & Roti">Dal-makhni & Roti</option>
+                    </optgroup>
+                    <optgroup>
+                        <option value="" selected disabled>Non-Veg Options</option>
+                        <option value="">Fish Curry</option>
+                        <option value="">Honey-Potato Chicken</option>
+                        <option value="">Chicken Chilli</option>
+                        <option value="">Mutton </option>
+                    </optgroup>
+                </select>
+    
+            </label>
+            <br><br>
+            <input type="submit" value="Submit" >
+        </fieldset>
+        
+    </form>
+</body>
+</html>

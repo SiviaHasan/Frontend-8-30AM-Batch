@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form fieldset</title>
+    <style>
+        fieldset{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <!-- Label tag connect text with input field  -->
+        <!-- fieldset tag group the form elemets to 
+        control the elements at one time -->
+        <!-- legend tag used to give title or caption to fieldset -->
+        <fieldset disabled>
+            <legend align="center">Teacher's Registration Form </legend>
+            <label for="email">Email
+                <input type="email" id="email" name="user_email">
+            </label>
+            <br><br>
+            <label for="pass">Password
+                <input type="password" id="pass" name="user_password">
+            </label>
+            <br><br>
+            <input type="submit"  value="Login">
+            <input type="reset" value="Cancel">
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend align="center">Student Registration Form </legend>
+            <label for="s-id">Email
+                <input type="email" id="sid" name="Student-email">
+            </label>
+            <br><br>
+            <label for="s-pass">Password
+                <input type="password" id="s-pass" name="student_password">
+            </label>
+            <br><br>
+            <input type="submit"  value="Login">
+            <input type="reset" value="Cancel">
+        </fieldset>
+    </form>
+</body>
+</html>

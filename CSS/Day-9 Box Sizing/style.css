@@ -1,0 +1,29 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+}
+section{
+    box-sizing: content-box;
+    width: 100px;
+    height: 100px;
+    /* Parking place padding:10px */
+    padding: 10px;
+    /* boundary thickness :10px*/
+    border: 10px solid salmon;
+    background-color: rgb(84, 216, 216);
+}
+article{
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    /* Parking place padding:10px */
+    padding: 10px;
+     /* boundary thickness :10px*/
+    border: 10px solid green ;
+    background-color: yellow;
+}

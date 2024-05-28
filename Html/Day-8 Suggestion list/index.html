@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data list</title>
+    <style>
+        textarea{
+            resize: none;
+            white-space: nowrap;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="#">
+       Email <input type="email" name="user-email"><br><br>
+       Password <input type="password" name="user-password"><br><br>
+       Mention youor state name <br><input type="text" name="user-state" list="state" placeholder="enter your state name"><br><br>
+       <datalist id="state">
+        <option value="Punjab">Punjab</option>
+        <option value="Utter Pradesh"></option>
+        <option value="Delhi"></option>
+        <option value="Madhya Pradesh"></option>
+        <option value="Arunachal Pradesh"></option>
+        <option value="Haryana"></option>
+        <option value="Rajsthan"></option>
+        <option >uk</option>
+        
+       </datalist><br>
+       <!-- text area -->
+      Enter your feedback <br>
+       <textarea name="feedback"  cols="20" rows="4"  placeholder="write something..!">
+    </textarea>
+       <br><br>
+       <input type="submit" value="Login">
+       <input type="reset" value="Cancel">
+    </form>
+</body>
+</html>

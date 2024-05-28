@@ -1,0 +1,42 @@
+a:link{
+   color: yellowgreen;
+}
+a:active{
+  color: orange;
+}
+a:visited{
+  color: deeppink;
+}
+a:hover{
+    background-color: black;
+    color: aliceblue;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 25px;
+}
+article:first-child{
+    color:rgb(33, 137, 45)
+}
+article:last-child{
+    color: coral;
+}
+article:nth-child(5){
+    color: magenta;
+}
+article:nth-child(odd){
+    color: rgb(0, 17, 255);
+}
+article>p:first-of-type{
+    color:aqua
+}
+article>p:last-of-type{
+    color: seagreen;
+}
+article>p:nth-of-type(3){
+    color: rgb(209, 37, 37);
+}
+    
+article>p:nth-of-type(even){
+    color: darkgrey;
+}

@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+span{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    /* display: inline-block; */
+    text-align: center;
+    padding: 70px;
+    /* visibility: hidden; */
+    display: none;
+
+   
+}
+div{
+    background-color: lightcoral;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    text-align: center;
+    padding: 70px;
+}
