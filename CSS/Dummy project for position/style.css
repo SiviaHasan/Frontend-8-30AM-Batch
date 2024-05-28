@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  width: 100vw;
+  
+}
+.container{
+  width: 100%;
+  height: auto;
+}
+.img{
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://static.theprint.in/wp-content/uploads/2022/02/punjab.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px 0px;
+  height: 80px;
+  background-color: rgba(7, 108, 14, 0.701);
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(2px);
+}
+nav .logo{
+  color: black;
+  font-size: 45px;
+  font-weight: 600px;
+  cursor: pointer;
+}
+nav .nav-links{
+  font-size: 22px;
+}
+nav .nav-links a{
+   text-decoration: none;
+   margin-right: 25px;
+   color: black;
+   padding: 12px 20px;
+   font-weight: 600;
+}
+nav .nav-links a:hover{
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+.hero-section{
+  width: 100%;
+  background-color: #929191b2;
+  padding: 70px 150px;
+}
+.hero-section article{
+  background-color: rgba(203, 219, 234, 0.616);
+  padding: 50px 100px;
+  margin-bottom: 20px;
+}
+.hero-section article h2{
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.hero-section article p{
+  font-size: 20px;
+  text-align: justify;
+}
+.hero-section article button{
+  margin-top: 9px;
+  padding: 10px;
+  background-color: rgba(231, 44, 44, 0.817);
+  border: none;
+  border-radius: 7.5px;
+  color: white;
+  font-weight: 300px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1);
+}
+button:hover{
+  transform: scale(1.1);
+}
+footer{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 20, 20, 0.959);
+  color: whitesmoke;
+  padding: 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  word-spacing: 2.5px;
+}

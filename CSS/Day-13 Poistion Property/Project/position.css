@@ -13,7 +13,7 @@ body{
   background-color: black;
 
   display: flex;
-  place-items: center;
+  align-items: center;
   justify-content: center;
 }
 .card{
@@ -39,6 +39,7 @@ body{
   text-align: justify;
   font-size: 20px;
   font-weight: 300;
+  padding: 10px 20px;
   position: absolute;
   top: -400px;
   transition: all 1s ease-in-out;
