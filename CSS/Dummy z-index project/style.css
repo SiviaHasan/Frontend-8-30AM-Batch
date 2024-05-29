@@ -1,0 +1,461 @@
+/* *{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+body{
+  height: 100vh;
+  width: 100vw;  
+}
+.container{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.container .card-1{
+  width:350px;
+  height: 500px;
+  background-color: white;
+  padding: 20px 0 0 0;
+  box-shadow: 2px 2px 4px 4px whitesmoke;
+  position: absolute;
+  z-index: 3;
+}
+.container .card-1:hover{
+  cursor: pointer;
+  box-shadow: 4px 4px 7px 7px whitesmoke;
+}
+.card-1 .top{
+  width: 100%;
+  height: 75%;
+  
+}
+.card-1 .top .pic{
+   width:90%;
+   height: 100%;
+   background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6d/Sidhu_Moose_Wala_during_the_shooting_of_his_film_Moosa_Jatt.jpg');
+   background-repeat: no-repeat;
+   background-position:bottom center;
+   background-size: cover; 
+   margin:auto;
+   
+}
+.card-1 .bottom{
+  width: 100%;
+  height: 25%;
+  
+
+}
+.card-1 .bottom .name{
+  width: 90%;
+  font-weight: 700;
+  text-align: center;
+  background-color: rgba(60, 170, 40, 0.658);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 18px;
+}
+.card-1 .bottom .songs{
+  width: 100%;
+  padding: 0px;
+  display: flex;
+  gap: 17px;
+  justify-content: space-around;
+  align-items: center; 
+
+}
+.card-1 .bottom .songs div{
+ 
+  border-radius: 5px;
+  color: aliceblue;
+  background-color: rgba(10, 10, 241, 0.605);
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+} */
+
+/* 
+.container .card-2{
+  width:350px;
+  height: 500px;
+  background-color: white;
+  box-shadow: 2px 2px 4px 4px whitesmoke;
+  position: absolute;
+}
+.container .card-2:hover{
+  cursor: pointer;
+  box-shadow: 4px 4px 7px 7px whitesmoke;
+}
+.card-2 .top{
+  width: 100%;
+  height: 75%;
+  
+}
+.card-2 .top .pic{
+   width:90%;
+   height: 100%;
+   background-image: url('https://i1.sndcdn.com/artworks-iauHbAQ8T2zGPw58-rlHiPA-t500x500.jpg');
+   background-repeat: no-repeat;
+   background-position:bottom center;
+   background-size: cover;
+  
+   margin:auto;
+   
+}
+.card-2 .bottom{
+  width: 100%;
+  height: 25%;
+  
+}
+.card-2 .bottom .name{
+  width: 90%;
+  font-weight: 700;
+  text-align: center;
+  background-color: rgba(60, 170, 40, 0.658);
+  padding: 10px;
+  display: inline-block;
+  border-radius: 5px;
+  margin: 10px 18px;
+}
+.card-2 .bottom .songs{
+  width: 100%;
+  padding: 0px;
+  display: flex;
+  gap: 17px;
+  justify-content: space-around;
+  align-items: center; 
+
+}
+.card-2 .bottom .songs div{
+ 
+  border-radius: 5px;
+  color: aliceblue;
+  background-color: rgba(10, 10, 241, 0.605);
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+.container .card-3{
+  width:350px;
+  height: 500px;
+  background-color: white;
+  box-shadow: 2px 2px 4px 4px whitesmoke;
+  position: absolute;
+}
+.container .card-3:hover{
+  cursor: pointer;
+  box-shadow: 4px 4px 7px 7px whitesmoke;
+}
+.card-3 .top{
+  width: 100%;
+  height: 75%;
+  
+}
+.card-3 .top .pic{
+   width:90%;
+   height: 100%;
+   background-image: url('https://p16-tm-sg.tiktokmusic.me/img/tos-alisg-i-0000/d0e057e91ecd4e5096034c3fd0acad62~c5_750x750.image');
+   background-repeat: no-repeat;
+   background-position:bottom center;
+   background-size: cover;
+  
+   margin:auto;
+   
+}
+.card-3 .bottom{
+  width: 100%;
+  height: 25%;
+}
+.card-3 .bottom .name{
+  width: 90%;
+  font-weight: 700;
+  text-align: center;
+  background-color: rgba(60, 170, 40, 0.658);
+  padding: 10px;
+  display: inline-block;
+  border-radius: 5px;
+  margin: 10px 18px;
+}
+.card-3 .bottom .songs{
+  width: 100%;
+  padding: 0px;
+  display: flex;
+  gap: 17px;
+  justify-content: space-around;
+  align-items: center; 
+
+}
+.card-3 .bottom .songs div{
+ 
+  border-radius: 5px;
+  color: aliceblue;
+  background-color: rgba(10, 10, 241, 0.605);
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+} */
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+}
+.card-container{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+
+  /* flex */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+}
+
+/* card-1 */
+.card-1{
+  width: 350px;
+  height: 450px;
+  background-color: white;
+  padding: 20px 0 0 0;
+  box-shadow: 0px 0px 12px 2px rgba(255,255,255);
+  position: absolute;
+  z-index: 9;
+  top:120px;
+  left: 200px;
+}
+.card-1:hover{
+  box-shadow: 0px 0px 30px 10px rgba(255, 255, 255, 0.886);
+  cursor: pointer;
+
+}
+.card-1 .card-top{
+  width: 100%;
+  height: 70%;
+  /* border: 3px solid red;     */
+
+}
+.card-top .profile{
+  margin: auto;
+  width: 90%;
+  height: 100%;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6d/Sidhu_Moose_Wala_during_the_shooting_of_his_film_Moosa_Jatt.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom -40px center;
+}
+.card-1 .card-bottom{
+  width: 100%;
+  height: 30%;
+
+
+}
+.card-1 .card-bottom .name{
+  width: 90%;
+  font-size: 20px;
+  color: white;
+  margin: 10px 17px;
+  /* margin-left: 10px; */
+  height: auto;
+  background-color: rgba(45, 166, 89, 0.669);
+  text-align: center;
+  padding: 10px 18px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+
+
+}
+.card-1 .card-bottom .songs{
+  
+  display: flex;    
+  align-items: center;
+  justify-content: center;
+  gap: 30px;    
+  background-color:white;
+
+}
+.card-1 .card-bottom .songs div{
+  text-align: center;
+  font-size: 20px;
+  /* width: 60%; */
+  background-color: #0a5ac9;
+  display: inline-block;
+  color: white;
+  padding: 10px 13px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+/* card-2 */
+.card-2{
+  width: 350px;
+  height: 450px;
+  background-color: white;
+  padding: 20px 0 0 0;
+  box-shadow: 0px 0px 12px 2px rgba(255,255,255);
+  position: absolute;
+  z-index: 8;
+  left: 400px;
+  top: 60px;
+}
+.card-2:hover{
+  box-shadow: 0px 0px 30px 10px rgba(255, 255, 255, 0.886);
+  cursor: pointer;
+}
+.card-2 .card-top{
+  width: 100%;
+  height: 70%;
+  /* border: 3px solid red;     */
+
+}
+.card-2 .card-top .profile{
+  margin: auto;
+  width: 90%;
+  height: 100%;
+  background-image: url('https://i1.sndcdn.com/artworks-iauHbAQ8T2zGPw58-rlHiPA-t500x500.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.card-2 .card-bottom{
+  width: 100%;
+  height: 30%;
+      
+
+
+}
+
+.card-2 .card-bottom .name{
+  width: 90%;
+  font-size: 20px;
+  color: white;
+  margin: 10px 17px;
+  /* margin-left: 10px; */
+  height: auto;
+  background-color: rgba(45, 166, 89, 0.669);
+  text-align: center;
+  padding: 10px 18px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+
+
+}
+.card-2 .card-bottom .songs{
+  
+  display: flex;    
+  align-items: center;
+  justify-content: center;
+  gap: 7px;    
+  background-color:white;
+
+}
+.card-2 .card-bottom .songs div{
+  text-align: center;
+  font-size: 20px;
+  /* width: 60%; */
+  background-color: #0a5ac9;
+  display: inline-block;
+  color: white;
+  padding: 10px 13px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+/* card-3 */
+.card-3{
+  width: 350px;
+  height: 450px;
+  background-color: white;
+  padding: 20px 0 0 0;
+  box-shadow: 0px 0px 12px 2px rgba(255,255,255);
+  position: absolute;
+  z-index: 7;
+  left: 550px;
+  top: 1px;
+}
+.card-3:hover{
+  box-shadow: 0px 0px 30px 10px rgba(255, 255, 255, 0.886);
+  cursor: pointer;
+}
+.card-3 .card-top{
+  width: 100%;
+  height: 70%;
+  /* border: 3px solid red;     */
+
+}
+.card-3 .card-top .profile{
+  margin: auto;
+  width: 90%;
+  height: 100%;
+  background-image: url('https://p16-tm-sg.tiktokmusic.me/img/tos-alisg-i-0000/d0e057e91ecd4e5096034c3fd0acad62~c5_750x750.image');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card-3 .card-bottom{
+  width: 100%;
+  height: 30%;
+ 
+
+}
+.card-3 .card-bottom .name{
+  width: 90%;
+  font-size: 20px;
+  color: white;
+  margin: 10px 17px;
+  /* margin-left: 10px; */
+  height: auto;
+  background-color: rgba(45, 166, 89, 0.669);
+  text-align: center;
+  padding: 10px 18px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+
+
+}
+.card-3 .card-bottom .songs{
+  
+  display: flex;    
+  align-items: center;
+  justify-content: center;
+  gap: 34px;    
+  background-color:white;
+
+}
+.card-3 .card-bottom .songs div{
+  text-align: center;
+  font-size: 20px;
+  /* width: 60%; */
+  background-color: #0a5ac9;
+  display: inline-block;
+  color: white;
+  padding: 10px 13px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
