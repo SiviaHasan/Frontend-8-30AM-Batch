@@ -1,0 +1,146 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.frame{
+  width: 350px;
+  height: 400px;
+  border: 2px solid rgba(75, 148, 212, 0.945);
+  overflow: hidden;
+  position: relative;
+  
+}
+.frame .frame-pic{ 
+  width: 100%;
+  height: 100%;
+  background-image:  url('https://upload.wikimedia.org/wikipedia/commons/6/6d/Sidhu_Moose_Wala_during_the_shooting_of_his_film_Moosa_Jatt.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  transition: all 2s ease 0s;
+  scale: 1;
+ 
+}
+.frame .frame-pic:hover {
+  scale: 1.4;
+}
+.frame .frame-pic:hover+.detail {
+  
+  left: 173px;
+  
+}
+.frame  .detail{
+  width: 175px;
+  height: auto;
+  background-color: rgba(166, 198, 225, 0.653);
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  text-align: justify;
+  position: absolute;
+  top:0px;
+  left:350px ;
+  transition:all 2s ease-in-out;
+}
+
+
+
+/* Second card */
+.frame-2{
+  width: 350px;
+  height: 400px;
+  border: 2px solid rgba(136, 224, 227, 0.58);
+  overflow: hidden;
+  position: relative;
+  
+}
+.frame-2 .frame-pic-2{ 
+  width: 100%;
+  height: 100%;
+  background-image:  url('https://i1.sndcdn.com/artworks-iauHbAQ8T2zGPw58-rlHiPA-t500x500.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  transition: all 2s ease 0s;
+  scale: 1;
+
+}
+.frame-2 .frame-pic-2:hover {
+  scale: 1.4;
+}
+.frame-2 .frame-pic-2:hover+.detail-2 {
+  
+  left: 173px;
+  
+}
+.frame-2 .detail-2{
+  width: 175px;
+  height: auto;
+  background-color: rgba(103, 209, 215, 0.413);
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  text-align: justify;
+  position: absolute;
+  top:0px;
+  left:350px ;
+  transition:all 2s ease-in-out;
+}
+
+/* Third card */
+
+.frame-3{
+  width: 350px;
+  height: 400px;
+  border: 3px solid wheat;
+  overflow: hidden;
+  position: relative;
+  
+}
+.frame-3 .frame-pic-3{ 
+  width: 100%;
+  height: 100%;
+  background-image:  url('https://p16-tm-sg.tiktokmusic.me/img/tos-alisg-i-0000/d0e057e91ecd4e5096034c3fd0acad62~c5_750x750.image');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  transition: all 2s ease 0s;
+  scale: 1;
+
+}
+.frame-3 .frame-pic-3:hover {
+  scale: 1.4;
+  /* box-shadow: 2px 2px 4px 4px blue; */
+}
+.frame-3 .frame-pic-3:hover+.detail-3 {
+  
+  left: 173px;
+  
+}
+.frame-3 .detail-3{
+  width: 175px;
+  height: auto;
+  background-color: rgba(239, 217, 178, 0.573);
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  text-align: justify;
+  position: absolute;
+  top:0px;
+  left:350px ;
+  transition:all 2s ease-in-out;
+}
