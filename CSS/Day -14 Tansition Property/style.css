@@ -1,0 +1,101 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  width: 500px;
+  height: 500px;
+  border: 2px solid saddlebrown;
+  
+}
+.container .ease{
+  background-color: rgb(21, 177, 177);
+  width: 160px;
+  height: calc(100%/5);
+  font-size: 30px;
+  color: black;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 30px;
+
+  transition: all 2s ease;
+}
+.ease-in{
+  background-color: rgb(18, 115, 63);
+  width: 160px;
+  height: calc(100%/5);
+  font-size: 30px;
+  color: black;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 30px;
+
+  transition: all 2s ease-in;
+}
+.ease-out{
+  background-color: salmon;
+  width: 160px;
+  height: calc(100%/5);
+  font-size: 30px;
+  color: black;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 30px;
+
+  transition: all 2s ease-out;
+}
+.ease-in-out{
+  background-color: rgb(199, 25, 31);
+  width: 160px;
+  height: calc(100%/5);
+  font-size: 30px;
+  color: black;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 30px;
+
+  transition: all 2s ease-in-out;
+}
+.linear{
+  background-color: rgb(207, 74, 21);
+  width: 160px;
+  height: calc(100%/5);
+  font-size: 30px;
+  color: black;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 30px;
+
+  transition: all 2s linear;
+
+}
+.container .ease:hover{
+  width: 100%;
+}
+.container .ease-in:hover{
+  width: 100%;
+}
+
+.container .ease-out:hover{
+  width: 100%;
+}
+
+.container .ease-in-out:hover{
+  width: 100%;
+}
+
+.container .linear:hover{
+  width: 100%;
+}
+
