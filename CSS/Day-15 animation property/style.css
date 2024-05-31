@@ -1,0 +1,116 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: aliceblue;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.parent{
+  width: 600px;
+  height: 500px;
+  border: 2px solid white;
+
+}
+.child{
+   width: 20%;
+   height: calc(100%/5);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 22px ;
+   font-weight: 600;
+}
+.ease{
+  background-color: rgb(57, 158, 158);
+  animation: b1 2s ease 0s infinite alternate ;
+  /* animation-play-state: paused; */
+}
+.ease:hover{
+ animation-play-state: running;
+}
+@keyframes b1 {
+  from{
+    width: 20%;
+  }
+  To{
+    width: 100%;
+  }
+  
+}
+
+.ease-in{
+  background-color: coral;
+  animation: b2 2s ease-in 0s infinite alternate ;
+  /* animation-play-state: paused; */
+}
+.ease-in:hover{
+  animation-play-state: running;
+ }
+ @keyframes b2{
+   from{
+     width: 20%;
+   }
+   To{
+     width: 100%;
+   }
+   
+ }
+.ease-out{
+  background-color: green;
+  animation: b3 2s ease-out 0s infinite alternate ;
+  /* animation-play-state: paused; */
+}
+.ease-out:hover{
+  animation-play-state: running;
+ }
+ @keyframes b3 {
+   from{
+     width: 20%;
+   }
+   To{
+     width: 100%;
+   }
+   
+ }
+.ease-in-out{
+  background-color: dodgerblue;
+  animation: b4 2s ease-in-out 0s infinite alternate ;
+  /* animation-play-state: paused; */
+}
+.ease-in-out:hover{
+  animation-play-state: running;
+ }
+ @keyframes b4 {
+   from{
+     width: 20%;
+   }
+   To{
+     width: 100%;
+   }
+   
+ }
+.linear{
+  background-color: red;
+  animation: b5 2s linear 0s infinite alternate ;
+  /* animation-play-state: paused; */
+}
+.linear:hover{
+  animation-play-state: running;
+ }
+ @keyframes b5 {
+   from{
+     width: 20%;
+   }
+   To{
+     width: 100%;
+   }
+   
+ }
