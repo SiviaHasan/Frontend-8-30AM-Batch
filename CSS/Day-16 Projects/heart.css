@@ -1,0 +1,116 @@
+*{
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+ 
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(247, 244, 244);
+ position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heart-container{
+  width: 260px;
+  height:260px;
+  /* background-color: azure; */
+  position: relative;
+  animation: heart 0.5s ease-in-out 0s infinite alternate;
+
+  animation-play-state: paused;
+  
+}
+.heart-container .hrt{
+  /* width: 100px;
+  height: 40%; */
+  background-color: red;
+ 
+
+
+}
+@keyframes heart {
+  from{
+       transform: scale(1);
+  }
+  To{
+    transform: scale(1.4);
+
+  }
+}
+.left{
+  width:110px;
+  height: 140px;
+  position: absolute;
+  left:20px;
+  top:30px;
+  border-radius: 50% 50% 0 0;
+  transform:rotatez(-61.3deg);
+}
+.right{
+  width:110px;
+  height: 140px;
+  position: absolute;
+  left:90px;
+  top:30px;
+  border-radius: 50% 50% 0 0;
+  transform:rotatez(61.5deg);
+}
+.arrow-container{
+  width: 100%;
+  height: 100%;
+  /* background-color: rgb(101, 171, 232); */
+  left: -400px;
+  bottom: -180px;
+  position: relative;
+  animation: line 2s ease-in-out 0s 1 forwards;
+  
+}
+@keyframes line {
+  From{
+    left: -400px;
+    bottom: -180px;
+  }
+  To{ 
+    left: 0;
+    bottom: 40px;
+   
+    }
+  
+}
+.arrow-container .s-line{
+  background-color: rgb(17, 17, 17);
+  width: 90%;
+  height: 1%;
+  position: absolute;
+  top: 150px;
+ 
+  transform: rotateZ(-34deg);
+  
+}
+.arrow-container .v-line-1{
+  background-color: rgb(17, 17, 17);
+  width: 30%;
+  height: 1%;
+  position: absolute;
+  top: 87px;
+  right: 45px;
+  
+  transform: rotateZ(-3deg);
+}
+.arrow-container .v-line-2{
+  background-color: rgb(17, 17, 17);
+  width: 30%;
+  height: 1%;
+  position: absolute;
+  top: 120px;
+  right: 27px;
+  
+  transform: rotateZ(-60deg);
+}
+.arrow-container:hover{
+  animation-play-state: running;
+  cursor: pointer;
+}
