@@ -1,0 +1,120 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+body{
+  width: 100vw;
+  height: 100vh;
+
+  position: relative;
+  /* overflow: hidden; */
+}
+.container{
+  width: 100%;
+  height: auto;
+  background-color: white;
+  position: fixed;
+
+  
+}
+header{
+  width: 100%;
+  height: 70px;
+
+  border: 1px solid whitesmoke;
+
+  display: flex;
+  gap: 100px;
+  position: fixed;
+  position: relative;
+}
+header .logo{
+  width:14%;
+  height: 80%;
+  margin-left: 60px;
+
+  /* background-color: rgb(66, 205, 159); */
+ 
+  background-image: url('https://www.eklavvya.com/blog/wp-content/uploads/2022/03/Zerodha-Logo.png');
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header.logo:hover{
+  cursor: pointer;
+}
+nav{
+  width:40% ;
+  height: 90%;
+  
+  /* background-color: aqua; */
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 0px;
+
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  left: 650px;
+  gap: 50px;
+}
+nav a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.701);  
+}
+header .icon{
+  width: 80px;
+  height: 90%;
+  /* background-color: rgb(23, 117, 49); */
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 40px;
+}
+.icon i{
+  width: 100%;
+  height: 100%;
+  padding: 24px 15px;
+  /* background-color: black; */
+  font-size: 20px;
+}
+.hero-section .pic{
+  top: 70px;
+  width: 80%;
+  height: 100vh;
+  position: absolute;
+  /* background-color: blue; */
+  z-index: -1;
+  
+ 
+ 
+}
+.pic img{
+  margin-top: 40px;
+  margin-left: 350px;
+}
+.hero-section .content{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  /* background-color: aqua; */
+  bottom: 30px;
+  text-align: center;
+  
+}
+.content h1{
+  font-size: 49px;
+  color: rgb(65, 64, 64);
+  font-weight: 600;
+  /* margin-left: 0px; */
+}
+.content p{
+  margin-top: 10px;
+  color: rgb(65, 64, 64);
+  font-size: 23px;
+  margin-left: 50px;
+}
+
