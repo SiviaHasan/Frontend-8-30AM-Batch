@@ -28,7 +28,10 @@ body{
   overflow: hidden;
   
 }
-  
+.container .frame:hover>div{
+  animation-play-state: running;
+
+}
 .frame .pic{
   width: 100%;
   height: 100%;
@@ -38,6 +41,8 @@ body{
   background-size: cover;
   background-position:center ;
   animation: picture 2s ease-in-out 0s infinite alternate;
+  animation-play-state: paused;
+
 }
 @keyframes picture {
   from{
@@ -61,16 +66,17 @@ body{
   color: black;
   background-color: rgba(210, 212, 203, 0.614);
   animation: text 2s ease-in-out 0s infinite alternate;
+  animation-play-state: paused;
 }
 @keyframes text {
   0%{
-    right: -280px;
+    right: -230px;
   }
   50%{
     right: 0;
   }
   100%{
-    right: -280px;
+    right: -230px;
   }
 }
 
@@ -82,6 +88,8 @@ body{
   position: absolute;
   bottom: 0;
   animation: li 2s ease-in-out 0s infinite alternate;
+  animation-play-state: paused;
+
 }
 @keyframes li {
   from{
@@ -101,7 +109,10 @@ body{
   overflow: hidden;
   
 }
+.container .frame-1:hover>div{
+  animation-play-state: running;
 
+}
 .frame-1 .pic-1{
   width: 100%;
   height: 100%;
@@ -111,6 +122,8 @@ body{
   background-size: cover;
   background-position:center ;
   animation: picture 2s ease-in-out 0s infinite alternate;
+  animation-play-state: paused;
+
 }
 
 .frame-1 .content-1{
@@ -125,6 +138,8 @@ body{
   right:-280px;
   background-color: rgba(204, 77, 30, 0.315);
   animation: text 2s ease-in-out 0s infinite alternate;
+  animation-play-state: paused;
+
 }
 
 
@@ -136,5 +151,7 @@ body{
   position: absolute;
   bottom: 0;
   animation: li 2s ease-in-out 0s infinite alternate;
+  animation-play-state: paused;
+
 }
 
