@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
+  font-family:"Inter", serif;
 }
 body{
   width: 100vw;
@@ -15,7 +15,7 @@ body{
   width: 100%;
   height: auto;
   background-color: white;
-  position: fixed;
+ 
 
   
 }
@@ -23,14 +23,30 @@ header{
   width: 100%;
   height: 70px;
 
-  border: 1px solid whitesmoke;
+  border: 1px solid rgba(245, 245, 245, 0.226);
+  position: fixed;
+  
+  /* blur-filter: blur(2); */
 
+  /* display: flex;
+  gap: 100px;
+  position: fixed;
+  position: relative; */
+}
+header .head-container{
+  width: 100%;
+  height: 100%;
+
+  border: 1px solid rgba(245, 240, 240, 0.804);
+
+   background-color: rgba(249, 249, 249, 0.975);
+  filter: blur(2);
   display: flex;
   gap: 100px;
   position: fixed;
   position: relative;
 }
-header .logo{
+.head-container .logo{
   width:14%;
   height: 80%;
   margin-left: 60px;
@@ -42,7 +58,7 @@ header .logo{
   background-repeat: no-repeat;
   background-size: cover;
 }
-header.logo:hover{
+.head-container .logo:hover{
   cursor: pointer;
 }
 nav{
@@ -64,7 +80,7 @@ nav a{
   text-decoration: none;
   color: rgba(0, 0, 0, 0.701);  
 }
-header .icon{
+.head-container .icon{
   width: 80px;
   height: 90%;
   /* background-color: rgb(23, 117, 49); */
@@ -88,6 +104,7 @@ header .icon{
   position: absolute;
   /* background-color: blue; */
   z-index: -1;
+  position: relative;
   
  
  
@@ -102,6 +119,7 @@ header .icon{
   height: auto;
   /* background-color: aqua; */
   bottom: 30px;
+  z-index: -1;
   text-align: center;
   
 }
@@ -117,4 +135,97 @@ header .icon{
   font-size: 23px;
   margin-left: 50px;
 }
+.hero-section .button-container{
+  width: 100%;
+  height: 50px;
+  /* background-color: aqua; */
 
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  
+}
+.button-container button{
+  font-size: 20px;
+  padding: 10px 30px;
+  font-weight: 500;
+  background-color: #387ed1;
+  border: none;
+  color: white;
+  border-radius: 3px;
+}
+.button-container button:hover{
+ cursor: pointer;
+ background-color: black;
+}
+.second_page{
+  width: 100%;
+  /* background-color: aqua; */
+  height: 100vh;
+  display: flex;
+  margin-top: 20px;
+}
+.second_page .left{
+  width: 47%;
+  height: 100%;
+  /* background-color: lightcoral; */
+  margin-top: 210px;
+  padding: 0 29px;
+
+}
+.second_page .right{
+  width: 53%;
+  height: 100%;
+  /* background-color: rgb(123, 17, 17); */
+  margin-top: 180px;
+  
+
+}
+.right h2{
+  font-size: 35px;
+  margin: 20px;
+  color:#424242;
+}
+.right p{
+  /* background-color: antiquewhite; */
+  width: 70%;
+  margin: 25px;
+  color:#424242;
+  line-height: 30px;
+  font-size: 17px;
+}
+.right .row{
+  width: 100%;
+  height: 100px;
+  /* background-color: aquamarine; */
+  display: flex;
+
+}
+.row .left-row{
+  width: 40%;
+  height: 100%;
+  /* background-color: blanchedalmond; */
+  padding: 0px 41px;
+  font-size: 17px;
+  line-height: 27px;
+  color:#424242;
+}
+.row .right-row{
+  width: 60%;
+  height: 100%;
+  /* background-color: rgb(138, 89, 16); */
+  padding: 0px 41px;
+  font-size: 17px;
+  line-height: 27px;
+  color:#424242;
+}
+.right .img{
+  width: 500px;
+  height: 40px;
+  /* background-color: aqua; */
+  margin-left: 25px;
+  background-image: url('https://zerodha.com/static/images/press-logos.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+}
