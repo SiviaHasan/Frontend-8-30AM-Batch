@@ -47,7 +47,7 @@ header .head-container{
   filter: blur(2);
   display: flex;
   gap: 100px;
-  position: fixed;
+
   position: relative;
   color: #7e7e7e;
   
