@@ -10,10 +10,12 @@ body{
   background-color: rgb(247, 244, 244);
  position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  justify-content: flex-end;
 }
 .heart-container{
+  top:80px;
+  left: -110px;
   width: 260px;
   height:260px;
   /* background-color: azure; */
@@ -58,27 +60,37 @@ body{
   border-radius: 50% 50% 0 0;
   transform:rotatez(61.5deg);
 }
+/* .rrow{
+  width: 260px;
+  height: 260px;
+  background-color: aqua;
+} */
 .arrow-container{
-  width: 100%;
-  height: 100%;
+  width: 260px;
+  height: 260px;
   /* background-color: rgb(101, 171, 232); */
-  left: -400px;
-  bottom: -180px;
+  left: -900px;
+  bottom: -300px;
+  z-index: 3;
   position: relative;
-  animation: line 2s ease-in-out 0s 1 forwards;
+  animation: line 2s ease-in-out 0s infinite forwards;
   
 }
 @keyframes line {
   From{
-    left: -400px;
-    bottom: -180px;
+    left: -900px;
+    bottom: -300px;
   }
   To{ 
-    left: 0;
-    bottom: 40px;
-   
+    left:155px;
+    bottom: -30px;
     }
-  
+    
+    }
+
+.arrow-container:hover+.heart-container{
+  animation-play-state: running;
+
 }
 .arrow-container .s-line{
   background-color: rgb(17, 17, 17);
@@ -86,6 +98,7 @@ body{
   height: 1%;
   position: absolute;
   top: 150px;
+  
  
   transform: rotateZ(-34deg);
   
